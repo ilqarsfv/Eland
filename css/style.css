@@ -370,8 +370,6 @@ a {
   width: 200px;
   height: 100%;
 }
-
-
 .confetties > div {
   position: absolute;
   transition: all .3s ease;
