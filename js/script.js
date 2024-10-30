@@ -5,7 +5,7 @@ $(document).ready(function () {
     $("#langEng").toggleClass("brightOp");
     $("#langAze").toggleClass("fadeOp");
   });
-  
+
   let a = $("#mainAbout");
   a.on("mousemove", parallax);
   function parallax(e) {
@@ -16,4 +16,13 @@ $(document).ready(function () {
       $(this).css("transform", `translateX(${x}px) translateY(${y}px)`);
     });
   }
+
+  $(".achievements").slick({
+    infinite: true,
+    slidesToShow: 2,
+    // autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots:true,
+  });
 });

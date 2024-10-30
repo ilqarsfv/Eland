@@ -18,6 +18,12 @@
 * {
   font-family: rubikRegular, Helvetica, sans-serif !important;
 }
+.pr-60 {
+  padding: 10px 0px;
+}
+.mr-60 {
+  margin: 60px 0px;
+}
 .bgBlue {
   background: #f5ffe9;
   margin: 60px 0px;
@@ -275,12 +281,16 @@ a {
   margin-bottom: 20px;
   position: relative;
 }
+#mainAboutContents h2 span {
+  position: relative;
+  z-index: 2;
+}
 #mainAboutContents h2::before {
   content: "";
   position: absolute;
   top: -15px;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   width: 90px;
   height: 90px;
   background: linear-gradient(90deg, rgb(58 68 179) 0%, rgb(119 58 179) 100%);
@@ -374,11 +384,82 @@ a {
   position: absolute;
   transition: all 0.3s ease;
 }
-.confetties > div:nth-of-type(2) {
+.confetties.first > div:nth-of-type(2) {
   left: 50px;
 }
-.confetties > div:nth-of-type(3) {
+
+.confetties.first > div:nth-of-type(3) {
   right: 0px;
+}
+.confetties.second > div:nth-of-type(1) {
+  left: -10px;
+  top: -40px;
+}
+.confetties.second > div:nth-of-type(2) {
+  left: 20px;
+  top: 40px;
+}
+.confetties.second > div:nth-of-type(3) {
+  right: 70px;
+  top: 70px;
+}
+
+/* nailiyyetler */
+
+.achievement h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+.achievement p {
+  font-size: 18px;
+  color: #595959;
+  line-height: 150%;
+}
+.achievements .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto 0;
+  gap: 15px;
+}
+
+.achievements .slick-dots button {
+  width: 8px;
+  height: 8px;
+  background: #e2e2e2;
+  border-radius: 50%;
+  text-indent: -99999px;
+  border: none;
+  padding: 0px;
+}
+.achievements .slick-dots button[aria-selected="true"] {
+  background: #a1d537;
+}
+.achievements .slick-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 26px;
+  text-align: center;
+}
+.achievements .slick-slide::before {
+  content: "";
+  display: block;
+  width: 46px;
+  min-width: 46px;
+  height: 148px;
+  background: url(/img/corn.svg) no-repeat 50% 50% / contain;
+}
+.achievements .slick-slide::after {
+  content: "";
+  display: block;
+  width: 46px;
+  min-width: 46px;
+  height: 148px;
+  background: url(/img/corn.svg) no-repeat 50% 50% / contain;
+  transform: scale(-1, 1);
 }
 /* mobile */
 @media screen and (max-width: 768px) {
