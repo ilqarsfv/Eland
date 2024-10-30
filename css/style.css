@@ -363,7 +363,7 @@ a {
   left: -160px;
   width: 200px;
 }
-.confetties.second{
+.confetties.second {
   position: absolute;
   right: -40%;
   top: 0;
@@ -372,7 +372,7 @@ a {
 }
 .confetties > div {
   position: absolute;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .confetties > div:nth-of-type(2) {
   left: 50px;
