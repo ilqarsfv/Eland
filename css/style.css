@@ -140,6 +140,25 @@ a {
 }
 
 /* xidmetler */
+#serviceTitles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#serviceTitles a {
+  font-size: 14px;
+  color: #0008;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#serviceTitles a:hover svg {
+  transform: translateX(5px);
+}
+#serviceTitles svg {
+  width: 10px;
+  transition: all .3s ease;
+}
 #services  h2{
     font-size: 1.7rem;
     font-weight: 600;
