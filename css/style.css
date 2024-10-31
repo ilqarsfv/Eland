@@ -461,6 +461,147 @@ a {
   background: url(/img/corn.svg) no-repeat 50% 50% / contain;
   transform: scale(-1, 1);
 }
+
+/* metodlarımız */
+.mainMetodSliders {
+  min-height: 600px;
+}
+.mainMetodSliders .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.mainMetodSliders .swiper-slide {
+  height: 500px;
+  position: relative;
+  padding: 55px;
+  overflow: hidden;
+  border-radius: 25px;
+  transform: scale(0.8) !important;
+  transition: all 0.3s ease;
+}
+.mainMetodSliders .swiper-slide-active {
+  transform: scale(1) !important;
+  transition: all 0.3s ease;
+}
+.mainMetodSliders .swiper-slide::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #0004;
+}
+.methodContents {
+  width: 60%;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mainMetodSliders .methodContents {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  position: relative;
+}
+.mainMetodSliders .swiper-slide h3 {
+  font-size: 32px;
+  line-height: 36px;
+}
+.methodBtmConts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.methodBtmConts a {
+  color: #fff;
+  text-decoration: underline;
+  display: inline-block;
+  margin-left: 5px;
+}
+.methodBtmConts p:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 28px;
+  line-height: 32px;
+}
+.methodBtmConts p:nth-of-type(2) {
+  font-size: 16px;
+  line-height: 22px;
+}
+.methodContents .arrowRight {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 7px;
+  display: grid;
+  place-content: center;
+}
+.methodContents .arrowRight svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* arrow */
+.swiper-slideArrows {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  background-color: #f5f7fa;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+.swiper-slideArrows > div {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.swiper-slideArrows > div:hover {
+  background-color: #000;
+}
+.swiper-slideArrows > div svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+.swiper-slideArrows > div:hover svg {
+  filter: invert(1);
+}
+
+#mainMethods h2 {
+  font-size: 46px;
+  letter-spacing: -0.01em;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#mainMethods h3 {
+  font-size: 32px;
+  line-height: 36px;
+}
 /* mobile */
 @media screen and (max-width: 768px) {
   #servicesWrapper .service {

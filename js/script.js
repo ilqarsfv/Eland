@@ -20,9 +20,20 @@ $(document).ready(function () {
   $(".achievements").slick({
     infinite: true,
     slidesToShow: 2,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
-    dots:true,
+    dots: true,
+  });
+  const swiper = new Swiper(".mainMetodSliders.swiper", {
+    slidesPerView: 1.25,
+    spaceBetween: -90,
+    centeredSlides: true,
+    loop: true,
+    speed: 600,
+    navigation: {
+      nextEl: ".methodRightArr",
+      prevEl: ".methodLeftArr",
+    },
   });
 });
