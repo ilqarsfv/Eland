@@ -450,7 +450,7 @@ a {
   width: 46px;
   min-width: 46px;
   height: 148px;
-  background: url(/img/corn.svg) no-repeat 50% 50% / contain;
+  background: url("../img/corn.svg") no-repeat 50% 50% / contain;
 }
 .achievements .slick-slide::after {
   content: "";
@@ -458,7 +458,7 @@ a {
   width: 46px;
   min-width: 46px;
   height: 148px;
-  background: url(/img/corn.svg) no-repeat 50% 50% / contain;
+  background: url("../img/corn.svg") no-repeat 50% 50% / contain;
   transform: scale(-1, 1);
 }
 
