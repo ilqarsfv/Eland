@@ -36,4 +36,11 @@ $(document).ready(function () {
       prevEl: ".methodLeftArr",
     },
   });
+
+  $(".inputGroup input").on( "focus", function(el) {
+    $(el.target).closest(".inputGroup").addClass("focusOn")    
+  })
+  $(".inputGroup input").on( "focusout", function(el) {
+    $(el.target).closest(".inputGroup").removeClass("focusOn")    
+  })
 });
