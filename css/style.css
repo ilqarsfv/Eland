@@ -205,6 +205,7 @@ a {
 .swiperSlideImgWrapper {
   width: 50%;
   position: relative;
+  margin-left: 100px;
 }
 .swiperSlideImgWrapper svg {
   width: 100%;
