@@ -801,7 +801,7 @@ footer {
 
 /* livechat */
 #liveChat {
-  background-image: url(/img/livechat.png);
+  background-image: url("../img/livechat.png");
   background-color: rgb(34, 86, 232);
   background-position: center center;
   background-size: cover;
