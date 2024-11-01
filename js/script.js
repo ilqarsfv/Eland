@@ -36,19 +36,29 @@ $(document).ready(function () {
       prevEl: ".methodLeftArr",
     },
   });
+  const swiper2 = new Swiper("#mainSlider .swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    speed: 600,
+    navigation: {
+      nextEl: ".mainSlideNext",
+      prevEl: ".mainSlidePrev",
+    },
+  });
 
-  $(".inputGroup input").on( "focus", function(el) {
-    $(el.target).closest(".inputGroup").addClass("focusOn")    
-  })
-  $(".inputGroup input").on( "focusout", function(el) {
-    $(el.target).closest(".inputGroup").removeClass("focusOn")    
-  })
-  $("#liveChat").click(function(){
-    $(this).addClass("hide")
-    $("#liveChatBox").addClass("visible")
-  })
-  $("#chatClose").click(()=>{
-    $("#liveChatBox").removeClass("visible")
-    $("#liveChat").removeClass("hide")
-  })
+  $(".inputGroup input").on("focus", function (el) {
+    $(el.target).closest(".inputGroup").addClass("focusOn");
+  });
+  $(".inputGroup input").on("focusout", function (el) {
+    $(el.target).closest(".inputGroup").removeClass("focusOn");
+  });
+  $("#liveChat").click(function () {
+    $(this).addClass("hide");
+    $("#liveChatBox").addClass("visible");
+  });
+  $("#chatClose").click(() => {
+    $("#liveChatBox").removeClass("visible");
+    $("#liveChat").removeClass("hide");
+  });
 });
