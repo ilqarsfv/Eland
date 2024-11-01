@@ -43,4 +43,12 @@ $(document).ready(function () {
   $(".inputGroup input").on( "focusout", function(el) {
     $(el.target).closest(".inputGroup").removeClass("focusOn")    
   })
+  $("#liveChat").click(function(){
+    $(this).addClass("hide")
+    $("#liveChatBox").addClass("visible")
+  })
+  $("#chatClose").click(()=>{
+    $("#liveChatBox").removeClass("visible")
+    $("#liveChat").removeClass("hide")
+  })
 });
