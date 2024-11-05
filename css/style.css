@@ -149,9 +149,6 @@ a {
 }
 
 /* ana sehife slider */
-#mainSlider {
-  background-color: #3333;
-}
 #mainSlider h2 {
   font-weight: bold;
   font-size: 45px;
@@ -222,7 +219,7 @@ a {
 #mainSlider div[role="button"] {
   width: 40px;
   height: 40px;
-  background: #fff6;
+  background: #9b9b9b66;
   border-radius: 50%;
   padding: 10px;
 }
